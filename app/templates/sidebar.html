@@ -1,0 +1,55 @@
+<nav class="sidebar sidebar-sticky">
+  <div class="sidebar-content">
+    <a class="sidebar-brand" href="{{ url_for('home') }}">
+      <i class="fas fa-user-astronaut fa-2x"></i>
+      <span class="align-middle">&nbsp;Exoplanet Portal</span></a
+    >
+    <hr class="mt-2" />
+    <ul class="sidebar-nav">
+      <li class="sidebar-header">Exoplanet Information</li>
+      <li class="sidebar-item">
+        <a
+          href="#portfolios"
+          data-toggle="collapse"
+          class="sidebar-link collapsed"
+          aria-expanded="false"
+        >
+          <i class="fas fa-images"></i>
+          <span class="align middle">Exoplanets</span>
+        </a>
+        <ul
+          id="portfolios"
+          class="sidebar-dropdown list-unstyled collapse"
+          style
+        >
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="{{ url_for('ProjectPlanets')}}">Stellar Relationships</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="{{ url_for('PlotlyProjectPlanets')}}">Discoveries Over Time</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar-header">Data Sourcing</li>
+      <li class="sidebar-item">
+        <a
+          href="#consumption"
+          data-toggle="collapse"
+          class="sidebar-link collapsed"
+          aria-expanded="false"
+        >
+          <i class="fas fa-cash-register"></i>
+          <span class="align middle">Explore</span>
+        </a>
+        <ul
+          id="consumption"
+          class="sidebar-dropdown list-unstyled collapse"
+          style
+        >
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="{{ url_for('our_data') }}">View Our Data</a>
+          </li>
+        </ul>
+    </ul>
+  </div>
+</nav>
